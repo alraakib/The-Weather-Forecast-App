@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Urbanist", sans-serif;
+    @apply overflow-y-scroll antialiased select-none;
+  }
+
+  * {
+    @apply overflow-x-hidden leading-normal;
+  }
+
+  body::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  body::-webkit-scrollbar-track {
+    @apply dark:bg-neutral-900 bg-[url("../assets/Background.png")] bg-[length:27%];
+  }
+
+  body::-webkit-scrollbar-thumb {
+    @apply border-2 dark:bg-neutral-700/50 bg-neutral-300;
+  }
+
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(64 64 64 / 0.5);
+    @apply bg-neutral-50 font-medium bg-[length:27%] bg-[url("../assets/Background.png")] py-10 bg-repeat pb-28 md:pb-10 overflow-x-hidden dark:bg-neutral-900 text-black/95 dark:text-white text-lg container transition-[background] duration-75 box-border;
+  }
+}
+
+@layer utilities {
+  .text-primary {
+    @apply text-black/95 dark:text-white;
+  }
+
+  .text-secondary {
+    @apply dark:text-neutral-500 text-neutral-500;
+  }
+
+  .border-bottom {
+    @apply border-b-2 dark:border-neutral-700 border-neutral-300;
+  }
+
+  .text-1xl {
+    font-size: 1.4rem;
+  }
+}
