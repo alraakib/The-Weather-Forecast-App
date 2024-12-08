@@ -88,7 +88,7 @@ export default function WeatherDataProvider({ children }) {
   useEffect(() => {
     if (locationLoaded && !locationError) {
       fetch(
-        `https://corsproxy.io/?https://api.open-meteo.com/v1/forecast?&hourly=temperature_2m,relativehumidity_2m,apparent_temperature,precipitation_probability,precipitation,weathercode,cloudcover,visibility,windspeed_10m,winddirection_10m,soil_temperature_0cm,soil_moisture_0_1cm,uv_index,is_day&daily=weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset,uv_index_max,precipitation_sum,precipitation_hours,precipitation_probability_max,windspeed_10m_max,winddirection_10m_dominant&current_weather=true&past_days=6&timezone=auto&latitude=${
+        `https://api.open-meteo.com/v1/forecast?&hourly=temperature_2m,relativehumidity_2m,apparent_temperature,precipitation_probability,precipitation,weathercode,cloudcover,visibility,windspeed_10m,winddirection_10m,soil_temperature_0cm,soil_moisture_0_1cm,uv_index,is_day&daily=weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset,uv_index_max,precipitation_sum,precipitation_hours,precipitation_probability_max,windspeed_10m_max,winddirection_10m_dominant&current_weather=true&past_days=6&timezone=auto&latitude=${
           location?.data?.lat
         }&longitude=${location?.data?.lon}${
           weatherUnit == "fahrenheit" ? "&temperature_unit=fahrenheit" : ""
@@ -124,7 +124,7 @@ export default function WeatherDataProvider({ children }) {
     const refreshData = setInterval(async () => {
       if (!locationError) {
         fetch(
-          `https://corsproxy.io/?https://api.open-meteo.com/v1/forecast?&hourly=temperature_2m,relativehumidity_2m,apparent_temperature,precipitation_probability,precipitation,weathercode,cloudcover,visibility,windspeed_10m,winddirection_10m,soil_temperature_0cm,soil_moisture_0_1cm,uv_index,is_day&daily=weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset,uv_index_max,precipitation_sum,precipitation_hours,precipitation_probability_max,windspeed_10m_max,winddirection_10m_dominant&current_weather=true&past_days=6&timezone=auto&latitude=${
+          `https://api.open-meteo.com/v1/forecast?&hourly=temperature_2m,relativehumidity_2m,apparent_temperature,precipitation_probability,precipitation,weathercode,cloudcover,visibility,windspeed_10m,winddirection_10m,soil_temperature_0cm,soil_moisture_0_1cm,uv_index,is_day&daily=weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset,uv_index_max,precipitation_sum,precipitation_hours,precipitation_probability_max,windspeed_10m_max,winddirection_10m_dominant&current_weather=true&past_days=6&timezone=auto&latitude=${
             location?.data?.lat
           }&longitude=${location?.data?.lon}${
             weatherUnit == "fahrenheit" ? "&temperature_unit=fahrenheit" : ""
