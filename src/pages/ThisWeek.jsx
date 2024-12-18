@@ -135,7 +135,7 @@ export default function ThisWeek() {
                           src={`https://img.icons8.com/fluency-systems-regular/28/${primaryColor}/sunrise.png`}
                           alt="Sunrise"
                         />
-                        <p className="font-semibold text-[1.3rem]">Sunrise</p>
+                        <p className="font-semibold text-lg">Sunrise</p>
                       </div>
                       <p className="text-[1.25rem] text-secondary">
                         {moment(weatherData.daily.sunrise[index]).format(
@@ -154,7 +154,7 @@ export default function ThisWeek() {
                           src={`https://img.icons8.com/fluency-systems-regular/28/${primaryColor}/sunset.png`}
                           alt="Sunrise"
                         />
-                        <p className="font-semibold text-[1.3rem]">Sunset</p>
+                        <p className="font-semibold text-lg">Sunset</p>
                       </div>
                       <p className="text-[1.25rem] text-secondary">
                         {moment(weatherData.daily.sunset[index]).format(
@@ -173,7 +173,7 @@ export default function ThisWeek() {
                           src={`https://img.icons8.com/fluency-systems-regular/28/${primaryColor}/midday.png`}
                           alt="Max Temperature"
                         />
-                        <p className="font-semibold text-[1.3rem]">UV Index</p>
+                        <p className="font-semibold text-lg">UV Index</p>
                       </div>
                       <p className="text-[1.25rem] text-secondary">
                         {weatherData.daily.uv_index_max[index]}
@@ -190,7 +190,7 @@ export default function ThisWeek() {
                           src={`https://img.icons8.com/fluency-systems-regular/28/${primaryColor}/rain-gauge.png`}
                           alt="Min Temperature"
                         />
-                        <p className="font-semibold text-[1.3rem]">
+                        <p className="font-semibold text-lg">
                           Precipitation Sum
                         </p>
                       </div>
@@ -209,7 +209,7 @@ export default function ThisWeek() {
                           src={`https://img.icons8.com/fluency-systems-regular/28/${primaryColor}/barometer.png`}
                           alt="Sunrise"
                         />
-                        <p className="font-semibold text-[1.3rem]">
+                        <p className="font-semibold text-lg">
                           Precipitation Probability
                         </p>
                       </div>
@@ -228,9 +228,7 @@ export default function ThisWeek() {
                           src={`https://img.icons8.com/fluency-systems-regular/28/${primaryColor}/wind-speed-43-47.png`}
                           alt="Wind Speed"
                         />
-                        <p className="font-semibold text-[1.3rem]">
-                          Max Wind Speed
-                        </p>
+                        <p className="font-semibold text-lg">Max Wind Speed</p>
                       </div>
                       <p className="text-[1.25rem] text-secondary">
                         {`${weatherData.daily.windspeed_10m_max[index]} ${weatherData.daily_units.windspeed_10m_max}`}
@@ -247,7 +245,7 @@ export default function ThisWeek() {
                           src={`https://img.icons8.com/fluency-systems-regular/28/${primaryColor}/windsock.png`}
                           alt="Wind Direction"
                         />
-                        <p className="font-semibold text-[1.3rem]">
+                        <p className="font-semibold text-lg">
                           Dominant Wind Direction
                         </p>
                       </div>
