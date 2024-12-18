@@ -123,7 +123,7 @@ export default function ThisWeek() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex flex-col w-full gap-2 divide-y-2 dark:divide-neutral-700 divide-neutral-300">
+                  <div className="flex flex-col w-full gap-2 divide-y-2 dark:divide-neutral-500/30 divide-neutral-200">
                     <AnimatedDiv
                       config={{
                         animation: "fade-left",
@@ -135,7 +135,7 @@ export default function ThisWeek() {
                           src={`https://img.icons8.com/fluency-systems-regular/28/${primaryColor}/sunrise.png`}
                           alt="Sunrise"
                         />
-                        <p className="font-semibold text-lg">Sunrise</p>
+                        <p className="text-lg font-semibold">Sunrise</p>
                       </div>
                       <p className="text-[1.25rem] text-secondary">
                         {moment(weatherData.daily.sunrise[index]).format(
@@ -154,7 +154,7 @@ export default function ThisWeek() {
                           src={`https://img.icons8.com/fluency-systems-regular/28/${primaryColor}/sunset.png`}
                           alt="Sunrise"
                         />
-                        <p className="font-semibold text-lg">Sunset</p>
+                        <p className="text-lg font-semibold">Sunset</p>
                       </div>
                       <p className="text-[1.25rem] text-secondary">
                         {moment(weatherData.daily.sunset[index]).format(
@@ -173,7 +173,7 @@ export default function ThisWeek() {
                           src={`https://img.icons8.com/fluency-systems-regular/28/${primaryColor}/midday.png`}
                           alt="Max Temperature"
                         />
-                        <p className="font-semibold text-lg">UV Index</p>
+                        <p className="text-lg font-semibold">UV Index</p>
                       </div>
                       <p className="text-[1.25rem] text-secondary">
                         {weatherData.daily.uv_index_max[index]}
@@ -190,7 +190,7 @@ export default function ThisWeek() {
                           src={`https://img.icons8.com/fluency-systems-regular/28/${primaryColor}/rain-gauge.png`}
                           alt="Min Temperature"
                         />
-                        <p className="font-semibold text-lg">
+                        <p className="text-lg font-semibold">
                           Precipitation Sum
                         </p>
                       </div>
@@ -209,7 +209,7 @@ export default function ThisWeek() {
                           src={`https://img.icons8.com/fluency-systems-regular/28/${primaryColor}/barometer.png`}
                           alt="Sunrise"
                         />
-                        <p className="font-semibold text-lg">
+                        <p className="text-lg font-semibold">
                           Precipitation Probability
                         </p>
                       </div>
@@ -228,7 +228,7 @@ export default function ThisWeek() {
                           src={`https://img.icons8.com/fluency-systems-regular/28/${primaryColor}/wind-speed-43-47.png`}
                           alt="Wind Speed"
                         />
-                        <p className="font-semibold text-lg">Max Wind Speed</p>
+                        <p className="text-lg font-semibold">Max Wind Speed</p>
                       </div>
                       <p className="text-[1.25rem] text-secondary">
                         {`${weatherData.daily.windspeed_10m_max[index]} ${weatherData.daily_units.windspeed_10m_max}`}
@@ -245,7 +245,7 @@ export default function ThisWeek() {
                           src={`https://img.icons8.com/fluency-systems-regular/28/${primaryColor}/windsock.png`}
                           alt="Wind Direction"
                         />
-                        <p className="font-semibold text-lg">
+                        <p className="text-lg font-semibold">
                           Dominant Wind Direction
                         </p>
                       </div>

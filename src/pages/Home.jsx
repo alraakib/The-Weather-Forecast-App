@@ -215,7 +215,7 @@ export default function Home() {
             <h3 className="font-semibold text-1xl">Weather Statistics Today</h3>
             <p className="text-lg text-secondary">{`In ${location.data.city}, ${location.data.country}`}</p>
           </AnimatedDiv>
-          <div className="flex flex-col gap-3 mt-20 divide-y-2 dark:divide-neutral-700 divide-neutral-300">
+          <div className="flex flex-col gap-2 mt-20 divide-y-2 dark:divide-neutral-500/30 divide-neutral-200">
             <AnimatedDiv
               config={{
                 animation: "fade-left",
@@ -227,7 +227,7 @@ export default function Home() {
                   src={`https://img.icons8.com/fluency-systems-regular/28/${primaryColor}/sunrise.png`}
                   alt="Sunrise"
                 />
-                <p className="text-lg font-semibold">Sunrise</p>
+                <p className="text-[1.35rem] font-semibold">Sunrise</p>
               </div>
               <p className="text-[1.25rem] text-secondary">
                 {moment(weatherData.daily.sunrise[7]).format("h:mm a")}
@@ -244,7 +244,7 @@ export default function Home() {
                   src={`https://img.icons8.com/fluency-systems-regular/28/${primaryColor}/sunset.png`}
                   alt="Sunrise"
                 />
-                <p className="text-lg font-semibold">Sunset</p>
+                <p className="text-[1.35rem] font-semibold">Sunset</p>
               </div>
               <p className="text-[1.25rem] text-secondary">
                 {moment(weatherData.daily.sunset[7]).format("h:mm a")}
@@ -261,7 +261,7 @@ export default function Home() {
                   src={`https://img.icons8.com/fluency-systems-regular/28/${primaryColor}/thermometer-up.png`}
                   alt="Max Temperature"
                 />
-                <p className="text-lg font-semibold">Max Temperature</p>
+                <p className="text-[1.35rem] font-semibold">Max Temperature</p>
               </div>
               <p className="text-[1.25rem] text-secondary">
                 {`${weatherData.daily.temperature_2m_max[7]} ${weatherData.daily_units.temperature_2m_max}`}
@@ -278,7 +278,7 @@ export default function Home() {
                   src={`https://img.icons8.com/fluency-systems-regular/28/${primaryColor}/thermometer-down.png`}
                   alt="Min Temperature"
                 />
-                <p className="text-lg font-semibold">Min Temperature</p>
+                <p className="text-[1.35rem] font-semibold">Min Temperature</p>
               </div>
               <p className="text-[1.25rem] text-secondary">
                 {`${weatherData.daily.temperature_2m_min[7]} ${weatherData.daily_units.temperature_2m_min}`}
@@ -295,7 +295,9 @@ export default function Home() {
                   src={`https://img.icons8.com/fluency-systems-regular/28/${primaryColor}/hail.png`}
                   alt="Sunrise"
                 />
-                <p className="text-lg font-semibold">Precipitation Sum</p>
+                <p className="text-[1.35rem] font-semibold">
+                  Precipitation Sum
+                </p>
               </div>
               <p className="text-[1.25rem] text-secondary">
                 {`${weatherData.daily.precipitation_sum[7]} ${weatherData.daily_units.precipitation_sum}`}
@@ -312,7 +314,7 @@ export default function Home() {
                   src={`https://img.icons8.com/fluency-systems-regular/28/${primaryColor}/wind-speed-43-47.png`}
                   alt="Wind Speed"
                 />
-                <p className="text-lg font-semibold">Wind Speed</p>
+                <p className="text-[1.35rem] font-semibold">Wind Speed</p>
               </div>
               <p className="text-[1.25rem] text-secondary">
                 {`${weatherData.daily.windspeed_10m_max[7]} ${weatherData.daily_units.windspeed_10m_max}`}
@@ -329,7 +331,7 @@ export default function Home() {
                   src={`https://img.icons8.com/fluency-systems-regular/28/${primaryColor}/windsock.png`}
                   alt="Wind Direction"
                 />
-                <p className="text-lg font-semibold">Wind Direction</p>
+                <p className="text-[1.35rem] font-semibold">Wind Direction</p>
               </div>
               <p className="text-[1.25rem] text-secondary">
                 {`${weatherData.daily.winddirection_10m_dominant[7]}${weatherData.daily_units.winddirection_10m_dominant}`}

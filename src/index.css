@@ -2,7 +2,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
   html {
     font-family: "Urbanist", sans-serif;
@@ -11,6 +10,7 @@
 
   * {
     @apply overflow-x-hidden leading-normal;
+    letter-spacing: -0.3px;
   }
 
   body::-webkit-scrollbar {

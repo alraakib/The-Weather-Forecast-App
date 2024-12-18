@@ -125,7 +125,7 @@ export default function ThisWeek() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex flex-col w-full gap-2 divide-y-2 dark:divide-neutral-700 divide-neutral-300">
+                  <div className="flex flex-col w-full gap-2 divide-y-2 dark:divide-neutral-500/30 divide-neutral-200">
                     <AnimatedDiv
                       config={{
                         animation: "fade-left",
